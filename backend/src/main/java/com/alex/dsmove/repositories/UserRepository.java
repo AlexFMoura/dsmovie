@@ -6,5 +6,5 @@ import com.alex.dsmove.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-	User findByEmial(String email);
+	User findByEmail(String email);
 }

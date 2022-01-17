@@ -28,7 +28,7 @@ public class ScoreService {
 	@Transactional(readOnly = true)
 	public MovieDTO saveScore(ScoreDTO dto) {
 		
-		User user = userRepository.findByEmial(dto.getEmail());		
+		User user = userRepository.findByEmail(dto.getEmail());		
 		if (user == null) {
 			user = new User();
 			user.setEmail(dto.getEmail());
